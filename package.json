@@ -2,7 +2,7 @@
   "name": "lael-birthday",
   "private": true,
   "scripts": {
-    "build": "lessc --math=always ceremony/style/cake.less ceremony/style/cake.css"
+    "build:css": "lessc --math=always ceremony/style/cake.less ceremony/style/cake.css"
   },
   "devDependencies": {
     "less": "^4.2.0"
