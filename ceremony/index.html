@@ -5,27 +5,29 @@
 <!--[if gt IE 8]> <html> <![endif]-->
 <!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
 <head>
-	<title>Happy Birthday Tsion</title>
+	<title>Happy Birthday Lael</title>
 	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday Tsion">
+	<meta name="description" content="Happy Birthday Lael">
 	<meta name="robots" content="index, follow" />
 	<link rel="author" href="https://plus.google.com/u/1/+Yabsra/" /> 
     <meta name="keywords" content="Birthday, Happy">
     <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
-    <meta property="og:image" content="favicon.ico" />
-    <meta property="og:description" content="Wish you a very Happy Birthday Tsion">
+    <meta property="og:image" content="/ceremony/favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday Lael">
     <!-- End of Facebook Meta Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/ceremony/style/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="/ceremony/style/loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet/less" href="/ceremony/style/cake.less">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	<link rel="icon" href="/ceremony/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/ceremony/style/cake.css">
 </head>
 
 <body>
@@ -97,7 +99,7 @@
 				<p>a piece of happiness to you</p>
 				<p>I made all this...</p>
 				<p>as a birthday present to you</p>
-				<p>thanks for my sister</p>
+				<p>thanks for being my girl</p>
 				<p>thanks for everything</p>
 				<p>I wish you all the best</p>
 				<p>May your life be at ease</p>
@@ -126,9 +128,19 @@
 				<p>and make it the best memory..</p>
 				<p>lastly...</p>
 				<p>I'd like to wish you one more time</p>
-				<p>a very happy birthday Tsion</p>
+				<p>a very happy birthday Lael</p>
 			</div>
 		</div>
+
+		<div id="final-wish-overlay" class="final-wish-overlay" aria-hidden="true">
+			<div class="final-wish-card">
+				<p class="final-wish-text">As you close your eyes and make a wish, just know that mine already came true the day I found you. Happy Birthday, my beautiful girl.</p>
+				<button type="button" class="btn btn-primary" id="final_wish_continue">Continue celebrating</button>
+			</div>
+		</div>
+
+		<div class="blow-puff" id="blow_puff" aria-hidden="true"></div>
+
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-md-6 text-center col-md-offset-3">
@@ -137,7 +149,8 @@
 					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
 					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
 					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary" id="light_candle">Light Candle</button>
+					<button class="btn btn-primary" id="blow_candle">Blow Out the Candle</button>
 					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
 					<button class="btn btn-primary" id="story">A message for you</button>
 				</div>

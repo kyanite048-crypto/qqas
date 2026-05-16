@@ -39,8 +39,8 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
-			$('#bannar_coming').fadeIn('slow');
+		$(this).fadeOut(300).delay(1800).promise().done(function(){
+			$('#bannar_coming').fadeIn(400);
 		});
 	});
 
@@ -132,13 +132,36 @@ $('document').ready(function(){
 	});
 
 	$('#light_candle').click(function(){
+		$('.cake').removeClass('candle-blown');
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+			$('#blow_candle').fadeIn('slow');
 		});
 	});
 
-		
+	$('#blow_candle').click(function(){
+		var $cake = $('.cake');
+		var $puff = $('#blow_puff');
+
+		$(this).fadeOut('fast');
+		$puff.removeClass('active');
+		void $puff[0].offsetWidth;
+		$puff.addClass('active');
+
+		$cake.addClass('candle-blown');
+		$('.fuego').stop(true, true).fadeOut(600);
+
+		setTimeout(function(){
+			$puff.removeClass('active');
+			$('#final-wish-overlay').addClass('is-visible').attr('aria-hidden', 'false');
+		}, 700);
+	});
+
+	$('#final_wish_continue').click(function(){
+		$('#final-wish-overlay').removeClass('is-visible').attr('aria-hidden', 'true');
+		$('#wish_message').fadeIn('slow');
+	});
+
 	$('#wish_message').click(function(){
 		 vw = $(window).width()/2;
 

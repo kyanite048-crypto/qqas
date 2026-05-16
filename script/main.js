@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "December",
   ];
 
-  const targetDay = 2;
-  const targetMonthIndex = 1; // February
+  const targetDay = 9;
+  const targetMonthIndex = 4; // May
   const targetYear = 2026;
-  const birthYear = 2003;
+  const birthYear = 2010;
 
   let currentDay = 1;
   let currentMonthIndex = 0;
@@ -392,15 +392,15 @@ const animationTimeline = () => {
     )
     .staggerTo(
       ".eight svg",
-      1.5,
+      0.7,
       {
         visibility: "visible",
         opacity: 0,
         scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4,
+        repeat: 1,
+        repeatDelay: 0.35,
       },
-      0.3
+      0.15
     )
     .to(".six", 0.5, {
       opacity: 0,
